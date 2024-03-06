@@ -1,3 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#home {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+#disclaimer {
+    background-color: #ffcccb;
+    padding: 10px;
+    text-align: center;
+}
+
+#welcome {
+    margin: 20px;
+    padding: 20px;
+    background-color: #d9edf7;
+}
+
+/* Navigation styles */
 nav {
     background-color: #333;
     overflow: hidden;
