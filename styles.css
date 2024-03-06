@@ -1,15 +1,17 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    color: #ffffff;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    border-radius: 10px;
 }
 
 nav {
@@ -39,56 +41,56 @@ nav {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff6666;
+}
+
+/* Rounded Styles */
+.rounded {
+    border-radius: 10px;
 }
 
 /* Home Section Styles */
 #home {
-    background-color: #f0f0f0;
-    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     text-align: center;
+    margin: 20px;
 }
 
 /* Disclaimer Section Styles */
 #disclaimer {
-    background-color: #ffcccb;
-    padding: 20px;
+    background-color: rgba(255, 102, 102, 0.8);
+    padding: 10px;
     text-align: center;
+    margin: 20px;
 }
 
 /* Welcome Section Styles */
 #welcome {
-    margin: 40px;
-    padding: 40px;
-    background-color: #d9edf7;
-    text-align: center;
-}
-
-/* Features Section Styles */
-#features {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-.feature-card {
-    background-color: #f0f0f0;
+    margin: 20px;
     padding: 20px;
-    text-align: center;
-    margin: 0 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.feature-card i {
-    color: #333;
-    margin-bottom: 10px;
+/* Dotted Shapes Styles */
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation: dot-animation 10s linear infinite;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+@keyframes dot-animation {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
 }
