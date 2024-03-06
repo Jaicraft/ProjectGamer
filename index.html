@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Project Gamer</title>
-   <link rel="stylesheet" href="styles.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Cool background */
+        body {
+            background: linear-gradient(45deg, #1c1c1c, #333333);
+            background-size: 400% 400%;
+            animation: background-animation 20s ease infinite;
+        }
+
+        @keyframes background-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Dotted shapes */
+        .dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            animation: dot-animation 10s linear infinite;
+        }
+
+        @keyframes dot-animation {
+            0% {
+                transform: translateY(100vh);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
 </head>
 <body>
-   <header>
-       <nav>
-           <div class="logo">
-               <a href="#">Project Gamer</a>
-           </div>
-           <div class="nav-links">
-               <ul>
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">Games</a></li>
-                   <li><a href="#">P-r-o-x-y</a></li>
-                   <li><a href="#">Social</a></li>
-                   <li><a href="#">About</a></li>
-               </ul>
-           </div>
-       </nav>
-   </header>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Project Gamer</a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">P-r-o-x-y</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-   <div id="home">
-       <h1>Welcome to the site!</h1>
-   </div>
+    <div id="home" class="rounded">
+        <h1>Welcome to the Ultimate Gaming Hub!</h1>
+    </div>
 
-   <div id="disclaimer">
-       <p><strong>DO NOT COPY THE SITE. DO YOUR OWN WORK.</strong></p>
-   </div>
+    <div id="disclaimer" class="rounded">
+        <p><strong>DISCLAIMER: This site is for educational and entertainment purposes only. DO NOT COPY THE SITE. DO YOUR OWN WORK.</strong></p>
+    </div>
 
-   <div id="welcome">
-       <h2>Welcome to Project Gamer!</h2>
-       <p>Hey there! Project Gamer is a collaboration site between Terry, Dipan, Nom, Tyler, Marwan, Elijah, and others!</p>
-       <p>This site aims to be a sort of hub for all of us gamers. Here, you can find unblocked games, chat with friends, and more! The site is also regularly updated with games, so you'll always find something to play! Check out the P-r-o-x-y tab for a proxy that allows you to easily access unblocked games and websites. Also, check out the Social Tab to chat with fellow gamers! In fact, one of the new features added is a Video Chat, where you can chat with fellow gamers via audio and video, and even stream games and anything else you'd want to! You can play Minecraft and even watch some YouTube, movies, and anime. You can also chill out with some casual games, or go head to head with your friends via competitive games! Make tier lists and more Also, don't forget to recommend some games. as always, have fun, and happy gaming!</p>
-       <p><em>Note: some pages are still under development, so if you see an empty page, then just keep in mind that it will have content soon.</em></p>
-       <p>- Project Gamer Dev Team</p>
-   </div>
+    <div id="welcome" class="rounded">
+        <h2>Welcome to Project Gamer!</h2>
+        <p>Greetings, fellow gamers! Project Gamer is an epic collaboration site between Terry, Dipan, Nom, Tyler, Marwan(no more), Elijah, and other gaming enthusiasts!</p>
+        <p>This site aims to be the ultimate hub for all of your gaming needs. Here, you can find unblocked games, chat with friends, and immerse yourself in an incredible gaming experience! The site is regularly updated with the latest and greatest games, so you'll always have something new and exciting to explore.</p>
+        <p>Check out the P-r-o-x-y tab for a powerful proxy that allows you to easily access unblocked games and websites. Unleash your gaming potential and navigate the web without restrictions!</p>
+        <p>Don't forget to visit the Social Tab, where you can chat with fellow gamers and form epic gaming squads! One of the newest and coolest features is the Video Chat, which allows you to chat with other gamers via audio and video. You can even stream games, movies, and anime while chatting with your friends!</p>
+        <p>Dive into the world of Minecraft, watch your favorite YouTube channels, or chill out with some casual games. If you're feeling competitive, challenge your friends to intense multiplayer battles! You can also create tier lists, share your gaming experiences, and engage in lively discussions.</p>
+        <p>As always, we encourage you to recommend games that you think should be added to the site. Your input helps us curate the best gaming experience for everyone.</p>
+        <p>So, grab your controller, keyboard, or mouse, and get ready for an unforgettable gaming adventure! Have fun, and happy gaming!</p>
+        <p>- Project Gamer Dev Team</p>
+    </div>
 
-   <section id="features">
-       <div class="feature-card">
-           <i class="fas fa-gamepad fa-3x"></i>
-           <h3>Unblocked Games</h3>
-           <p>Play a wide variety of unblocked games on our site.</p>
-       </div>
-       <div class="feature-card">
-           <i class="fas fa-comments fa-3x"></i>
-           <h3>Chat with Friends</h3>
-           <p>Connect with fellow gamers and chat in real-time.</p>
-       </div>
-       <div class="feature-card">
-           <i class="fas fa-video fa-3x"></i>
-           <h3>Video Chat</h3>
-           <p>Stream games and chat with audio and video.</p>
-       </div>
-   </section>
+    <!-- Dotted shapes -->
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
 
-   <footer>
-       <p>&copy; 2024 Project Gamer. All rights reserved.</p>
-   </footer>
-
-   <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
